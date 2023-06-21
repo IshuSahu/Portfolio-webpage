@@ -1,0 +1,379 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*Utilities  */
+html{
+  scroll-behavior: smooth;
+}
+.Red {
+  color: #ff4545;
+}
+#element {
+  color: rgb(255 188 47);
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 55px;
+  background-color: rgb(92 98 158);
+  position: fixed;
+  width: 100%;
+  margin-top: -20px;
+}
+.left {
+  font-size: 1.7rem;
+  margin-left: -72px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 32px;
+  padding: 3px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  position: relative;
+}
+nav ul li a:hover {
+  color: #f86b6b;
+}
+/* Making a Transition */
+nav ul li a::after {
+  content: " ";
+  width: 0;
+  height: 3px;
+  background: #ff4545;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* First section */
+#Home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0px;
+  height: 620px;
+}
+.div1,
+.div2 {
+  width: 40%;
+}
+.div1 {
+  margin-left: 12px;
+  font-size: 2.9rem;
+  height: 212px;
+  width: 449px;
+  
+}
+.div2 img {
+  height: 411px;
+  width: 418px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#About {
+  height: 500px;
+  padding: 80px 0px;
+  color: #ababaa;
+
+  background-color: #ababaa;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.col1 {
+  flex-basis: 35%;
+}
+.col1 > img {
+  height: 400px;
+  width: 85%;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.col2 {
+  flex-basis: 55%;
+}
+
+.title {
+  font-size: 34px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.Sub-title {
+  display: flex;
+  margin: 10px 0px 12px;
+}
+
+.title-link {
+  margin-right: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+.title-link::after {
+  content: " ";
+  width: 0;
+  height: 3px;
+  background: #f86b6b;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.title-link:hover::after {
+  width: 50%;
+}
+
+.tab-content ul li {
+  list-style: none;
+  margin: 5px 0px;
+  font-size: 12px;
+}
+
+.tab-content ul span {
+  color: #ff4545;
+  font-size: 15px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active-content {
+  display: block;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>Project Section<<<<<<<<<<<<<<<<<<<<<<<< */
+#project {
+  height: 400px;
+  padding: 30px 0px;
+}
+#project h2 {
+  margin-left: 10px;
+  font-size: 3rem;
+}
+#project .container {
+  padding: 50px;
+}
+
+.button3{
+  text-align: center;
+  border: 2px solid #5c629e;
+  margin: 14px 45%;
+  padding: 5px;
+  border-radius:.4rem;
+  font-size: 18px;
+  font-family: sans-serif;
+  display: inline-block;
+  background: transparent;
+  box-shadow: inset 0 0 0 0 #fff;
+  border: 1px solid #ff4545;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+.button3:hover{
+  border: 1px solid transparent;
+  box-shadow: inset 300px 0 0 0 #ffffff54;
+  color: black;
+}
+.more > a:hover{
+  color: black;
+}
+
+#project .container .more > a {
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  position: relative;
+}
+#project {
+  height: 600px;
+  padding: 30px 0px;
+}
+
+#project .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 14px;
+}
+.project-image > img {
+  filter: invert(100%);
+  height: 50px;
+  width: 50px;
+}
+#project .projects {
+  background-color: #2222225e;
+  margin: 5px 5px;
+  padding: 35px;
+  border-radius: 10px;
+  transition: background  0.5s, tranform 0.5s;
+}
+
+
+.project-info > p {
+  margin-bottom: 10px;
+}
+
+.project-info > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-info > p {
+  margin-bottom: 10px;
+}
+
+.project-info a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin: 15px 100px 0px 100px;
+  display: inline-block;
+  padding: 3px;
+  border: 2px solid #5c629e;
+  transition: background  0.5s, tranform 0.5s;
+}
+
+.project-info a:hover {
+   background-color: #5c629e;
+   border: 2px solid;
+   /* transform: translate3d(5px); */
+   
+}
+
+#project .projects:hover {
+  background-color: #f86b6b;
+  transform: translateY(-10px);
+  box-shadow: 12px 12px 3px rgba(49, 49, 49, 0.329);
+}
+
+
+/* >>>>>>>>>>>>>Contact Info <<<<<<<<<<<<<<<*/
+
+.contact-content{
+  display: flex;
+  padding: 10px 100px;
+}
+.contact-left{
+  flex-basis: 35%;
+
+}
+.contact-left p{
+  margin-top: 10px;
+
+}
+.contact-left .image{
+  margin-top: 2px;
+  filter: invert(100%);
+  height: 20px;
+  width: 20px;
+}
+.contact-left .social-image{
+  margin-top: 10px;
+  padding: 7px;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  transition: transform 0.1s;
+}
+.social-icons .social-image:hover{
+  color: #f86b6b;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(90, 89, 89, 0.19);
+
+}
+
+/* Style buttons */
+.btn {
+  background-color: #f86b6b;
+  border: none;
+  color: white;
+  margin-top: 10px ;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+.contact-right form{
+  width: 100%;
+}
+input, textarea{
+  margin: 15px 0;
+  padding: 15px;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #262626;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+
+}
+.btn .submit{
+  margin-left: 30%;
+}
+
+.center{
+  height: 25px;
+  padding: 5px;
+  text-align: center;
+  color: #777575b4;
+  background-color: #262626;
+}
+#msg{
+  color:#8d8b8bd3;
+  display: block;
+}
+
+/* >>>>>>>>>>>>>>>Making REsposive design <<<<<<<<<<<<<<<<*/
+/* nav .new{
+  display: none;
+  
+}
+@media only screen and (max-width: 600px) {
+  .left {
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 5px;
+  }
+  nav .new{
+    display: block;
+    size: 25px;
+  }
+} */
