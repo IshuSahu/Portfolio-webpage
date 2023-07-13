@@ -63,6 +63,7 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
   width: 100%;
+  
 }
 
 /* First section */
@@ -304,6 +305,7 @@ nav ul li a:hover::after {
   display: inline-block;
   transition: transform 0.1s;
 }
+
 .social-icons .social-image:hover{
   color: #f86b6b;
   transform: translateY(-5px);
