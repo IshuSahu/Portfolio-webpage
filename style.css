@@ -121,52 +121,7 @@ nav ul > i {
   width: 60%;
   margin: 10vw;
 }
-@media (max-width: 600px) {
-  header{
-  height: 60px;
-  width: 100%;
-  background-color: rgb(92 98 158);
-  }
-  .left {
-    font-size: 8vw;
-    font-weight:500;
-    padding: 2vb;
-  }
-  nav ul li{
-    display: none;
-  }
-  nav ul > i {
-  display: block;
-  font-size: 11vw;
-}
 
-/* Home Section */
-  #Home{
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-  }
-  .div1 {
-    height: 100%;
-    font-size: 11vw;
-    width: 100%;
-    text-align: center;
-    margin-top: 20vw;
-    margin-left: 20vw;
-  }
-  .div2 {
-    width: 100%;
-    height: 100vw;
-    align-items: center;
-  }
-  .div2 img{
-    width: 100%;
-    height: 100%; 
-  }
-  .row{
-    margin-top:21vw;
-  }
-} 
 
 /* About Section */
 
@@ -179,7 +134,7 @@ nav ul > i {
   flex-basis: 35%;
 }
 .col1 > img {
-  height: 400px;
+  height: 25vw;
   width: 85%;
   border-radius: 10px;
   align-items: center;
@@ -190,7 +145,7 @@ nav ul > i {
 }
 
 .title {
-  font-size: 34px;
+  font-size: 2.3rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
@@ -241,13 +196,15 @@ nav ul > i {
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>Project Section<<<<<<<<<<<<<<<<<<<<<<<< */
+
 #project {
-  height: 400px;
+  height: 600px;
   padding: 30px 0px;
 }
+
 #project h2 {
   margin-left: 10px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 #project .container {
   padding: 50px;
@@ -256,7 +213,7 @@ nav ul > i {
 .button3{
   text-align: center;
   border: 2px solid #5c629e;
-  margin: 14px 45%;
+  margin: 1vw 45%;
   padding: 5px;
   border-radius:.4rem;
   font-size: 18px;
@@ -283,10 +240,6 @@ nav ul > i {
   color: white;
   position: relative;
 }
-#project {
-  height: 600px;
-  padding: 30px 0px;
-}
 
 #project .row {
   display: grid;
@@ -296,26 +249,139 @@ nav ul > i {
 }
 .project-image > img {
   filter: invert(100%);
-  height: 50px;
-  width: 50px;
+  height: 4vw;
+  width: 4vw;
 }
 #project .projects {
   background-color: #2222225e;
-  margin: 5px 5px;
-  padding: 35px;
-  border-radius: 10px;
+  margin:1vw;
+  padding: 2vw;
+  border-radius: 2vw;
   transition: background  0.5s, tranform 0.5s;
 }
 
+@media (max-width: 600px) {
+  header{
+  height: 60px;
+  width: 100%;
+  background-color: rgb(92 98 158);
+  }
+  .left {
+    font-size: 8vw;
+    font-weight:500;
+    padding: 2vb;
+  }
+  nav ul li{
+    display: none;
+  }
+  nav ul > i {
+  display: block;
+  font-size: 11vw;
+  }
+/* Home section */
+  #Home{
+    flex-direction: column;
+    height: 38vh;
+    width: 100vw;
+  }
+  .div1 {
+    height: 100%;
+    font-size: 8vw;
+    width: 100%;
+    text-align: center;
+    margin-top: 20vw;
+    margin-left: 20vw;
+  }
+  .div2 {
+    display: none;
+  }
+  .container{
+    height: 190vw;
+  }
+  .row{
+
+    margin-left: 20vw;
+    margin-top:8vw;
+  }
+  .col1 > img {
+    height:30vh;
+    width: 55vw;
+    border-radius: 5vw;
+    align-items: center;
+  }
+
+  /* Project section */
+  #project {
+  margin-left: -5vw;
+  height: 170vh;
+  width: 100%;
+  }
+  #project .row{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+  }
+  #project .projects{
+    height: 90vw;
+    width: 100vw;
+    margin: 1vw;
+    padding: 2vw;
+  }
+  .project-image > img {
+    filter: invert(100%);
+    height: 15vw;
+    width: 15vw;
+  }
+  .project-info > h3 {
+    font-size: 1.5rem;
+   font-weight: bold;
+    margin-bottom: 0.2vw;
+  }
+  .more{
+    margin-top: -10vw;
+    margin-left: 47%;
+  }
+  .button3{
+    margin: 10vw 0vw;
+  }
+  .project-info a{
+    margin: 0.5vw 42vw 0.5vw 30vw;
+    padding: 1vw;
+  }
+
+  /* >>>>>>>>>>>>>Contact Info <<<<<<<<<<<<<<<*/
+
+  .contact-content{
+    display: flex;
+    flex-direction:column-reverse;
+    padding: 10px 13px;
+  }
+  .contact-left p{
+    margin: 2vw 4vw;
+    padding: 0.5vw 0vw;
+    font-size: 1rem;
+  }
+  .social-image{
+  margin:3vw 4vw;
+  }
+  .Bottom-resume{
+    display: none;
+  }
+  .center{
+    width: 100%;
+  }
+
+} 
 
 .project-info > p {
   margin-bottom: 10px;
 }
 
 .project-info > h3 {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.2vw;
 }
 
 .project-info > p {
@@ -325,8 +391,8 @@ nav ul > i {
 .project-info a {
   text-decoration: none;
   color: white;
-  font-size: 12px;
-  margin: 15px 100px 0px 100px;
+  font-size: 0.9em;
+  margin: 0.5vw 8vw 0px 7vw;
   display: inline-block;
   padding: 3px;
   border: 2px solid #5c629e;
@@ -351,29 +417,28 @@ nav ul > i {
 
 .contact-content{
   display: flex;
-  padding: 10px 100px;
+  padding: 10px 13px;
 }
 .contact-left{
   flex-basis: 35%;
-
+  padding: 13px 10px;
 }
 .contact-left p{
-  margin-top: 10px;
-
+  margin-top: 1.5vw;
+  font-size: 1rem;
 }
 .contact-left .image{
-  margin-top: 2px;
   filter: invert(100%);
-  height: 20px;
-  width: 20px;
+  height: 28px;
+  width: 28px;
+  margin-top: 5px;
 }
 .contact-left .social-image{
-  margin-top: 10px;
-  padding: 7px;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  transition: transform 0.1s;
+  margin-top: 1vw;
+    padding: 0.5vw;
+    width: 9%;
+    display: inline-block;
+    transition: transform 0.1s;
 }
 
 .social-icons .social-image:hover{
@@ -388,7 +453,7 @@ nav ul > i {
   background-color: #f86b6b;
   border: none;
   color: white;
-  margin-top: 10px ;
+  margin-top: 0px ;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 15px;
@@ -422,7 +487,7 @@ input, textarea{
 }
 
 .center{
-  height: 25px;
+  height: 1.5vw;
   padding: 5px;
   text-align: center;
   color: #777575b4;
@@ -430,7 +495,7 @@ input, textarea{
 }
 #msg{
   color:#8d8b8bd3;
-  display: block;
+  display:table-row;
 }
 
 /* >>>>>>>>>>>>>>>Making REsposive design <<<<<<<<<<<<<<<<*/

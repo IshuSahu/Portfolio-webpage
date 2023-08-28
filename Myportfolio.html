@@ -24,7 +24,7 @@
                     <li><a href="#About">About</a></li>
                     <li><a href="#project">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="ri-menu-line"></i>
+                    <i class="ri-menu-line" id="menuIcon"></i>
                 </ul>
             </div>
         </nav>
@@ -33,7 +33,9 @@
     <section id="Home">
         <div class="div1"> Hii, My name is <span class="Red">Ishu</span> <br>
             And i'm passionate <br>
-            <span id="element"></span>
+            <span id="element"></span><br>
+            <a href="./assests/Resume (1).pdf" download target="_blank"><button class="btn"><i
+                        class="fa fa-download"></i> Download Resume</button></a>
         </div>
         <div class="div2"> <img src="assests/PngItem_5312066.png" alt="Developer"></div>
     </section>
@@ -45,7 +47,8 @@
                 <h1 class="title">About Me</h1>
                 <p>Hii, I am a PG student at RCOEM Nagpur. I have a strong foundation in programming languages such
                     as C++, Java, Python, and C. Additionally, I possess knowledge in database management and
-                    software engineering concepts. proficient web developer capable of creating websites and applications.</p>
+                    software engineering concepts. proficient web developer capable of creating websites and
+                    applications.</p>
                 <div class="Sub-title">
                     <p class="title-link active-tab" onclick="opentab('skills')">Skill</p>
                     <p class="title-link" onclick="opentab('education')">Education</p>
@@ -143,7 +146,8 @@
                     <div class="project-info">
                         <h3>Project Name Here</h3>
                         <p>
-                            Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo
+                            Curabitur in iaculis ex. Etiam volutpat laoreet urna. <br>
+                            Morbi ut tortor nec nulla commodo
                             malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet
                             placerat.
                         </p>
@@ -175,8 +179,8 @@
                         <a href="https://www.instagram.com/http.ishusahu/" target="_blank"><img class="social-image"
                                 src="./assests/social/instagram.png" alt=""></a>
                     </div>
-                    <a href="./assests/Resume (1).pdf" download target="_blank"><button class="btn"><i
-                                class="fa fa-download"></i> Download Resume</button></a>
+                    <a class="Bottom-resume" href="./assests/Resume (1).pdf" download target="_blank"><button
+                            class="btn"><i class="fa fa-download"></i> Download Resume</button></a>
                 </div>
 
 
@@ -186,7 +190,7 @@
                         <input type="email" name="Email" placeholder="Your email" required>
                         <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
 
-                        <a href="" class="submit"><button class="btn " type="submit">Submit</button></a>
+                        <a href="" class="submit"><button class="btn " type="submit">Send</button></a>
                     </form>
                     <span id="msg"></span>
                 </div>
@@ -223,6 +227,13 @@
             document.getElementById(tabname).style.display = "block";
             document.querySelector("[onclick='opentab(\"" + tabname + "\")']").classList.add("active-tab");
         }
+        const menuIcon = document.getElementById('menuIcon');
+        const menu = document.getElementById('menu');
+
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
 
     </script>
     <script>
