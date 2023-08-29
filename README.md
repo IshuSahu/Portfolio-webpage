@@ -1,4 +1,5 @@
-# Portfolio Webpage
+# Personal Portfolio Webpage
+![Alt Text](https://github.com/IshuSahu/Portfolio-webpage/blob/main/assests/ezgif.com-gif-maker.gif)
 
 This repository contains the code for my personal portfolio webpage, which showcases my skills and projects in web development. The webpage is built using HTML, CSS, and JavaScript.
 
@@ -29,7 +30,7 @@ I developed this portfolio webpage as a personal project. However, I appreciate 
 
 ## Contact
 
-You can reach out to me via email at [example@example.com](mailto:example@example.com) or by phone at +1 123-456-7890.
+You can reach out to me via email at [ishusahu593@gmail.com](mailto:example@example.com) or by phone at +91 7414983279.
 
 Connect with me on social media:
 - [GitHub](https://github.com/IshuSahu)
