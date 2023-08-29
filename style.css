@@ -497,21 +497,3 @@ input, textarea{
   color:#8d8b8bd3;
   display:table-row;
 }
-
-/* >>>>>>>>>>>>>>>Making REsposive design <<<<<<<<<<<<<<<<*/
-/* nav .new{
-  display: none;
-  
-}
-
-@media only screen and (max-width: 600px) {
-  .left {
-    font-size: 1.2rem;
-    margin: 0px;
-    padding: 5px;
-  }
-  nav .new{
-    display: block;
-    size: 25px;
-  }
-} 
