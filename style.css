@@ -91,7 +91,7 @@ nav ul > i {
 
 
 
-/* First section */
+First section
 #Home {
   display: flex;
   justify-content: space-around;
@@ -124,7 +124,7 @@ nav ul > i {
 }
 
 
-/* About Section */
+About Section
 
 .row {
   display: flex;
@@ -311,7 +311,7 @@ nav ul > i {
     align-items: center;
   }
 
-  /* Project section */
+  Project section
   #project {
   margin-left: -5vw;
   height: 170vh;
