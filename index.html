@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishu's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <!-- Sidebar -->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./assets/images/my-avatar.png" alt="Ishu Sahu" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Ishu Sahu">Ishu Sahu</h1>
+                    <p class="title">Full Stack Developer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:ishusahu593@gmail.com" class="contact-link">ishusahu593@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+917414983279" class="contact-link">+91 7414983279</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+                            <time datetime="2001-01-01">January 1, 2001</time>
+                            <!-- change to your real birthday if desired -->
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Nagpur, Maharashtra, India</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://linkedin.com/in/ishusahu" class="social-link" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/IshuSahu" class="social-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li><button class="navbar-link" data-nav-link>Contact</button></li>
+                </ul>
+            </nav>
+            <!-- About section -->
+            <article class="about  active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        Hi! I’m Ishu Sahu, a Full Stack Developer from Nagpur. I build clean, responsive web
+                        applications using modern tools like React, Node.js, and the MERN stack. I enjoy turning ideas
+                        into smooth, scalable solutions, from e-commerce platforms to user-friendly interfaces. I’m
+                        always curious and eager to learn, and I love taking on new challenges and working with others
+                        to solve real problems with well-written, efficient code.
+                    </p>
+                </section>
+
+                <section class="service">
+
+                    <h3 class="h3 service-title">What i'm doing</h3>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web design</h4>
+
+                                <p class="service-item-text">
+                                    The most modern and high-quality design made at a professional level.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web development</h4>
+
+                                <p class="service-item-text">
+                                    High-quality development of sites at the professional level.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                                <p class="service-item-text">
+                                    Professional development of applications for iOS and Android.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Photography</h4>
+
+                                <p class="service-item-text">
+                                    I make high-quality photos of any category at a professional level.
+                                </p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+            </article>
+            <!-- Resume section -->
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <!-- Education -->
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Master in Computer Applications</h4>
+                            <span>2022 — 2024</span>
+                            <p class="timeline-text">
+                                Shri Ramdeobaba College of Engineering and Management, Nagpur (CGPA: 8.23)
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Bachelor of Science</h4>
+                            <span>2019 — 2022</span>
+                            <p class="timeline-text">
+                                Kamla Nehru Mahavidyalaya, Nagpur (CGPA: 7.78)
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">HSC (Maharashtra State Board)</h4>
+                            <span>2017 — 2019</span>
+                            <p class="timeline-text">
+                                Shri Umiyashankar Narayanji Jr. College, Nagpur (CGPA: 7.5)
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Experience -->
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Full Stack Developer</h4>
+                            <span>Feb 2024 — Present</span>
+                            <p class="timeline-text">
+                                Working at Happy Gaming World, focused on developing responsive UIs with React, Redux,
+                                and TailwindCSS, and automating daily operations like stock management and label
+                                generation to improve efficiency.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Skills -->
+                <section class="skill">
+                    <h3 class="h3 skills-title">My skills</h3>
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">React / MERN Stack</h5>
+                                <data value="85">85%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Java / Spring Boot</h5>
+                                <data value="75">75%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Golang</h5>
+                                <data value="70">70%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">MySQL / PostgreSQL</h5>
+                                <data value="80">80%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <!-- Contact section -->
+            <article class="contact" data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.230884707032!2d79.0881549149384!3d21.14580098592786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c072b1be13f3%3A0x96e518d04279314a!2sNagpur%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1712740634771!5m2!1sen!2sin"
+                            width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="#" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required
+                                data-form-input />
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required
+                                data-form-input />
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required
+                            data-form-input></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
